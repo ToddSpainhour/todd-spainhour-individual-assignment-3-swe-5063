@@ -3,11 +3,18 @@ class NavBar extends HTMLElement
     constructor() 
     {
         super();
-        this.innerHTML = `<nav>
-                            <a href="welcome.html">Welcome</a>
-                            <a href="products.html">Products</a>
-                            <a href="about.html">About Us</a>
-                          </nav>`;
+        this.innerHTML = 
+            `<nav>
+                <div class="nav-element">
+                    <a href="welcome.html">Welcome</a>
+                </div>
+                <div class="nav-element">
+                    <a href="products.html" class="nav-element">Products</a>
+                </div>
+                <div class="nav-element">
+                    <a href="about.html" class="nav-element">About Us</a>
+                </div>       
+            </nav>`;
     }
 }
 
