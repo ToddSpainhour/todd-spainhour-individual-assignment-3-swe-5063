@@ -5,6 +5,10 @@ class NavBar extends HTMLElement
         super();
         this.innerHTML = 
             `<nav>
+                <div class="logo-container">
+                    <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRslKnNvO72QK-3TrnGRVeyHTaEJHHSxsoFCkHw3Yv5rQ&usqp=CAU&ec=48665699"></img>
+                    <h1>Victory Board Games</h1>
+                </div>
                 <div class="nav-element">
                     <a href="welcome.html">Welcome</a>
                 </div>
