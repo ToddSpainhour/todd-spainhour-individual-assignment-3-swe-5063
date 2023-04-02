@@ -1,25 +1,42 @@
 @import "./_variables.css";
 
 html {
-    background-color: var(--background);
-    color: var(--text);
+    background-color: var(--lightest);
+    color: var(--darkGrey);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 nav {
-    background-color: var(--text);
-    height: 50px;
+    background-color: var(--lightest);
+    height: 75px;
     display: flex;
     justify-content:  end;
     align-items: center;
 }
 
 nav a {
-    color: lightblue;
+    color: var(--darkGrey);
     justify-content: center;
     text-decoration:none;
+    font-weight: bolder;
 }
 
 .nav-element {
     min-width: 100px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: block;
+    align-content: center;
+    width: 100%;
+    margin-left: 50px;
+    color: var(--accentOne)
+}
+
+#logo {
+    max-height: 50px;
+    align-self: center;
+    margin: 10px 20px 10px 20px;
 }
 

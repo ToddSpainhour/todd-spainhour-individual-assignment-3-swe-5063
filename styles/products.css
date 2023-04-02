@@ -1,0 +1,22 @@
+.card-body {
+    background-color:var(--lightest);
+    width: 40%;
+    margin: 1rem;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-art {
+    max-height: 450px;
+    width: auto;
+} 
+
+#printProductCardsHere {
+    background-color: var(--light);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

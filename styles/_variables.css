@@ -1,4 +1,9 @@
 html {
     --background: lightslategray;
-    --text: snow;
+    --lightest: snow;
+    --light: #E6EAEE;
+    --darkGrey: #97ACBE;
+    --lightBlue: #73D8F3;
+    --lightGreen: #AFC143;
+    --accentOne: #DE5F26;
 }
