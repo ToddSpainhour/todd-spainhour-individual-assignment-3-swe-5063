@@ -4,3 +4,22 @@ html {
     background-color: var(--background);
     color: var(--text);
 }
+
+nav {
+    background-color: var(--text);
+    height: 50px;
+    display: flex;
+    justify-content:  end;
+    align-items: center;
+}
+
+nav a {
+    color: lightblue;
+    justify-content: center;
+    text-decoration:none;
+}
+
+.nav-element {
+    min-width: 100px;
+}
+
