@@ -1,0 +1,62 @@
+@import "./_variables.css";
+
+main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 50px;
+}
+
+h4 {
+    margin: .5rem 0 .5rem 0;
+}
+
+table {
+    padding: 1rem;
+    background-color: var(--darkGrey);
+    color: var(--light);
+    font-weight: 900;
+    max-width: 30%;
+}
+
+td {
+    padding: 1rem;
+}
+
+p {
+    padding: .5rem;
+}
+
+.call-to-action-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 30%;
+}
+
+.about-us-text-container {
+    max-width: 30%;
+}
+
+.call-to-action {
+    color: var(--accentOne);
+    font-weight: 900;
+    font-size: 50px;
+    margin: .5rem 0 .5rem 0;
+    border-bottom: 3px solid var(--light);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-us-text {
+    text-align: justify;
+    margin: 0;
+
+}
+
+.owner-pic {
+    float: left;
+    width: 150px;
+    padding: 10px 10px 0 0;
+    border-radius: 25%
+}
