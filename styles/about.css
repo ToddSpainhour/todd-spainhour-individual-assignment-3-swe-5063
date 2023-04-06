@@ -1,10 +1,11 @@
 @import "./_variables.css";
 
-main {
+.content-container {
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin-top: 50px;
+    min-height: 75vh;
 }
 
 h4 {
@@ -17,6 +18,7 @@ table {
     color: var(--light);
     font-weight: 900;
     max-width: 30%;
+    height: 500px;
 }
 
 td {
@@ -30,7 +32,7 @@ p {
 .call-to-action-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     max-width: 30%;
 }
 
