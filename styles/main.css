@@ -6,6 +6,11 @@ html {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
 nav {
     background-color: var(--lightest);
     height: 75px;

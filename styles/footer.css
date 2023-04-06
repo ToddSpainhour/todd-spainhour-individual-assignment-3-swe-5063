@@ -1,0 +1,19 @@
+@import './_variables.css';
+
+footer {
+    background-color: var(--lightGreen);
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.footer-text {
+    margin: 0;
+    padding: 0;
+    color: var(--light);
+}
