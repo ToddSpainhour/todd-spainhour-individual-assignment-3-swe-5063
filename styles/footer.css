@@ -1,5 +1,3 @@
-@import './_variables.css';
-
 footer {
     background-color: var(--lightGreen);
     height: 5rem;

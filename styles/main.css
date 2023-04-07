@@ -36,6 +36,13 @@ nav a {
     align-content: center;
     width: 100%;
     margin-left: 50px;
+
+}
+
+.clickable-logo {
+    width:fit-content;
+    display: flex;
+    flex-direction: block;
     color: var(--accentOne)
 }
 
@@ -49,5 +56,4 @@ nav a {
 .huge-text {
     font-size: 75px;
     font-weight: 900;
-    /* color: var(--light) */
 }

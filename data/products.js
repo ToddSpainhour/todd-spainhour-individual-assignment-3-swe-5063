@@ -55,10 +55,12 @@ const buildProjectCards = (array) =>
 
     for(i = 0; i < array.length; i++){
         domString += '<div class="card-body">'
-            domString += `<img src="${array[i].boxArt}" class="box-art"></img>`
-            domString += `<h3>${array[i].name}</h3>`
-            domString += `<p>Number of Players: ${array[i].playerCount}</p>`
-            domString += `<p>Game Length: ${array[i].gameLength}</p>`
+        domString += '<div class="card-img-container">'
+        domString += `<img src="${array[i].boxArt}" class="box-art"></img>`
+        domString += '</div>'
+        domString += `<h3>${array[i].name}</h3>`
+        domString += `<p>Number of Players: ${array[i].playerCount}</p>`
+        domString += `<p>Game Length: ${array[i].gameLength}</p>`
         domString += '</div>'
     }
     printToDom('printProductCardsHere', domString);
