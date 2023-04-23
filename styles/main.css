@@ -30,6 +30,7 @@ nav a {
     display: flex;
     flex-direction: row;
     text-align: center;
+    padding-right: 100px;
 }
 
 .nav-element {
@@ -63,6 +64,11 @@ nav a {
     font-weight: 900;
 }
 
+#navigation-toggle-button {
+    visibility: hidden;
+}
+
+
 @media screen and (max-width: 750px) {
 
     body {
@@ -74,13 +80,26 @@ nav a {
         height: auto;
     }
 
+    #navigation-toggle-button {
+        visibility: visible;
+    }
+
+    .nav-toggle-container {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        width: 100%;
+    }
+
     .nav-element-container {
         flex-direction: column;
-
+        display: none;
+        padding-right: 0;
     }
 
     .nav-element {
         padding-bottom: 15px;
     }
+
 }
 

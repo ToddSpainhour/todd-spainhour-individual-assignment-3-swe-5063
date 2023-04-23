@@ -11,7 +11,10 @@ class NavBar extends HTMLElement
                         <h1>Victory Board Games</h1>
                     </a>
                 </div>
-                <div class="nav-element-container">
+                <div class="nav-toggle-container">
+                    <button id="navigation-toggle-button" value="">Menu</button>
+                </div>
+                <div id="nav-container" class="nav-element-container">
                     <div class="nav-element">
                         <a href="welcome.html">Welcome</a>
                     </div>
@@ -23,7 +26,32 @@ class NavBar extends HTMLElement
                     </div>  
                 </div>
             </nav>`;
-    }
-}
 
+            const toggleNavbar = () => {
+                const navbarToggleButton = document.getElementById("navigation-toggle-button");
+                const navElementContainer = document.getElementById("nav-container");
+
+                if(navbarToggleButton.value === "open"){
+                    navbarToggleButton.innerHTML = "Menu";
+                    navbarToggleButton.value = "closed";
+                    navElementContainer.style.display = "none";
+                } else {
+                    navbarToggleButton.innerHTML = "X"
+                    navbarToggleButton.value = "open";
+                    navElementContainer.style.display = "block";
+                }
+                
+            }
+        
+            const addEvents = () => {
+                const navbarToggleButton = document.getElementById("navigation-toggle-button");
+                navbarToggleButton.addEventListener("click", toggleNavbar);
+            }
+        
+            const init = () => {
+                addEvents();
+            }
+            init();
+    }      
+}
 window.customElements.define('nav-bar', NavBar);
